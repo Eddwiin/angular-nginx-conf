@@ -1,0 +1,9 @@
+services:
+  angular-nginx-conf:
+    container_name: angular-nginx-conf
+    build: .
+    image: angular-nginx-conf:13
+    ports:
+      - 8080:80
+    expose:
+      - 80
